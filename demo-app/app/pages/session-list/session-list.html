@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>SessionList</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let meetup of meetupList">
+      <strong>{{ meetup.title }}</strong>-<span>{{meetup.month}}</span>
+      <button item-right (click)="showOptions()">Options</button>
+    </ion-item>
+  </ion-list>
+
+  	<button fab fab-right fab-bottom (click)="goBack()">
+      <strong>X</strong>
+    </button>
+</ion-content>

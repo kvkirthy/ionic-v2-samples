@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar primary>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label fixed>
+      User Name
+    </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed>
+      Password
+    </ion-label>
+    <ion-input type="Password"></ion-input>
+  </ion-item>
+  <div padding>
+    <button primary block (click)="goToFirstPage()">Login</button>
+    <button dark block (click)="showOAuthWindow()"> OAuth Login</button>
+  </div>
+</ion-content>
